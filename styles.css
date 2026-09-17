@@ -1,0 +1,456 @@
+
+.site-header {
+    background-color: black;
+    border: 2px solid #b0e57c; 
+  height: 39px;
+    padding: 30px;
+    left: 6px;
+    display: flex;             
+    justify-content: center;   
+    align-items: f;
+    margin: 9px;
+    gap: 10px;                 
+}
+
+
+.btn {
+    background-color: white; 
+    color: black;              
+    text-decoration: none;  
+    margin:2px;
+    padding: 10px 20px;       
+    border: 1px solid #ccc;   
+    border-radius: 4px;       
+    font-weight: bold;       
+    cursor: pointer;          
+    transition: 1.3s;         
+}
+
+
+.btn:hover {
+    background-color: #f0f0f0; 
+    border-color: #999;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.site-header {
+    background-color: #b0e57c; 
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Логотип/Название слева */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: auto; 
+}
+
+.logo-img {
+    width: 100px;
+    height: 59px;
+    background-color: #fff; 
+    border-radius: 0%;
+}
+
+.site-title {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+}
+
+/* Навигация справа */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- ГЛАВНАЯ СТРАНИЦА (index.html) --- */
+.main-content {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-content h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.welcome-text {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.big-number {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #333;
+}
+
+.quote {
+     font-size: 22px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 55px;
+    font-size: 17px;
+    color: #666;
+}
+
+/* --- СТРАНИЦА "О СТРАНЕ" (about.html) --- */
+.about-layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Боковое меню */
+.sidebar {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-btn {
+    background-color: #b0e57c; /* Зелёные кнопки меню */
+    color: black;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.menu-btn:hover, .menu-btn.active {
+    background-color: #73a93d; /* Темнее при наведении */
+    color: white;
+}
+
+/* Область контента */
+/* Область контента - задаём минимальную высоту */
+.content-area {
+    flex-grow: 1;
+    background-color: #b0e57c;
+    border: 1px solid #ddd;
+    padding: 59px;
+    padding-right: 361px;
+    min-height: 592px; /* Увеличиваем высоту */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Блок контента растягивается на всю высоту */
+.content-section {
+    padding: -4px;
+    width: 135%;
+    min-height: 14px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок секции */
+.section-title {
+    text-align: center;
+    margin-top: 1;
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+/* Таблица истории - растягиваем на весь блок */
+.history-table {
+    width: 100%;
+    flex-grow: 1; /* Занимает всё доступное пространство */
+    border-collapse: collapse;
+    padding: 10px;
+    background-color: #b0e57c;
+    table-layout: fixed; /* Фиксированная ширина колонок */
+}
+
+.history-table td {
+    border: 1px solid green;
+    padding: 30px;
+    height: 13px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+}
+
+.history-table td:first-child {
+    width: 15%; /* Ширина колонки "Век" */
+    font-weight: bold;
+}
+
+.history-table td:last-child {
+    width: 85%; /* Ширина колонки "Событие" */
+    text-align: left;
+}
+
+
+.section-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 69px;
+    font-size: 20px;
+}
+
+/* Стили для разных блоков внутри контента */
+.text-block {
+    background-color: #b0e57c;
+    padding: -35px;
+    margin-bottom: 35px;
+    min-height: 9px;
+    font-size: 21px;
+    width: 100%;
+    border: 1px solid #b0e57c;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    height: 27px;
+    margin: 13px;
+    padding: 76px;
+}
+.footer .Добро пожаловать в Республику Белгурия! 
+    font-size: 209px;
+    font-weight: bold;
+
+}
+/* --- СТРАНИЦА НОВОСТЕЙ --- */
+.news-page {
+    max-width: 1274px;
+    margin: 40px auto;
+    padding: 0 31px;
+    margin-left: 50;
+}
+
+.news-page h1 {
+    text-align: center;
+    margin-bottom: 40px auto;
+    margin: 5px;
+    font-size: 25px;
+    padding: 29px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    background-color: #b0e57c;
+    border: 1px solid green;
+    border-radius: 8px;
+    padding: 13px;
+    margin-left: 8px;
+    display: flex;
+    gap: -3px;
+    flex-direction: column;
+    min-height: 350px;
+    width: 80%;
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 49px;
+}
+
+.news-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.news-card .read-more {
+    align-self: flex-end;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.news-card .read-more:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- СТРАНИЦА ОТДЕЛЬНОЙ НОВОСТИ --- */
+.news-detail {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.news-detail h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news-detail img {
+    width: 110%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.news-detail .news-text {
+    background-color: #b0e57c;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid green;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.news-detail .back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+/* Картинки в ряд для экономики */
+.images-row {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.images-row img {
+    width: 77%;
+    max-width: 221px;
+    height: 131px;
+    padding: 15px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid green;
+}
+/* --- СТРАНИЦА КОНТАКТЫ --- */
+.contacts-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 61px;
+    text-align: center;
+}
+
+.contacts-page h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contacts-header-block {
+    background-color: #b0e57c;
+    border: 1px solid green;
+    padding: 20px;
+    margin: 0 auto 22px auto;
+    border-radius: 4px;
+    width: 115%;
+    max-width: 289px;
+}
+
+/* Таблица контактов */
+.contacts-table {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.contact-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contact-label {
+    background-color: #b0e57c;
+    border: 1px solid green;
+    padding: 12px 20px;
+    width: 120px;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 4px 0 0 4px;
+}
+
+.contact-text {
+    background-color: #b0e57c;
+    border: 1px solid green;
+    border-left: none;
+    padding: 12px 20px;
+    flex-grow: 1;
+    text-align: left;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Большая надпись */
+.contacts-quote {
+    font-size: 65px;
+    font-weight: bold;
+    margin: 73px 0;
+}
+
