@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Экономика - Белгурия</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="site-header">
+        <div class="logo-area">
+           <img src="https://094a01d06c8a6036f9935b45c309f845.r2.cloudflarestorage.com/grok/generations/4b1dea66-5a46-4fd3-821e-a60f4f7a6da9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=1b78185b2ca3fe0c329e0132209dd454%2F20260915%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260915T162835Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d9ef54d078889893c1863980db6bfb83210ed59d4a07686193c3aeef71c87668" alt="Логотип" class="logo-img">
+            <span class="site-title">Белгурия</span>
+        </div>
+        <nav class="nav-buttons">
+            <a href="index.html" class="btn">Главная</a>
+            <a href="about.html" class="btn">О стране</a>
+            <a href="news.html" class="btn">Новости</a>
+            <a href="economy.html" class="btn">Экономика</a>
+            <a href="contacts.html" class="btn">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Макет с боковым меню -->
+    <div class="about-layout">
+        
+        <!-- Левое меню -->
+        <aside class="sidebar">
+            <button class="menu-btn active" onclick="showSection('industry', this)">Промышленность</button>
+            <button class="menu-btn" onclick="showSection('vpc', this)">ВПК</button>
+            <button class="menu-btn" onclick="showSection('export', this)">Экспорт</button>
+            <button class="menu-btn" onclick="showSection('import', this)">Импорт</button>
+        </aside>
+
+        <!-- Правая часть с контентом -->
+        <main class="content-area">
+            
+            <!-- Блок Промышленность -->
+            <div id="industry" class="content-section">
+                <h2 class="section-title">Промышленность</h2>
+                <div class="text-block">
+                    <p>Экономика Белгурии стабильна и современна. При населении в 23 миллиона человек ВВП страны достигает 275 миллиардов долларов (около 5,8 триллиона штегенов). Национальная валюта — штеген — имеет стабильный курс: 1 доллар США равен 21 штегену. Главная статья дохода и основа сферы услуг — туризм. Белые скалы, старинные маяки, океанское побережье и уникальные православные храмы привлекают путешественников со всего мира. Энергетический сектор базируется на ветряной энергетике: республика активно использует мощные атлантические ветра, что делает её лидером в производстве «зелёной» энергии. Традиционными отраслями остаются рыболовство и судостроение, где бережно сохраняются вековые традиции белгурского народа.</p>
+                    <div class="images-row">
+                        <img src="shrek.jpg" alt="Промышленность 1">
+                        <img src="shrek.jpg" alt="Промышленность 2">
+                        <img src="shrek.jpg" alt="Промышленность 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блок ВПК -->
+            <div id="vpc" class="content-section" style="display: none;">
+                <h2 class="section-title">ВПК</h2>
+                <div class="text-block">
+                    <p>Несмотря на статус нейтрального государства, Белгурия обладает развитым и высокотехнологичным ВПК, который ориентирован исключительно на оборону. Опираясь на мощное гражданское судостроение, военные верфи специализируются на производстве патрульных катеров, корветов и тральщиков для охраны территориальных вод. Кроме того, республика производит современные радиолокационные станции, системы береговой обороны и беспилотные морские аппараты. ВПК страны не создает наступательных вооружений, строго соответствуя доктрине нейтралитета, однако качество оборонительных технологий позволяет полностью обеспечить безопасность побережья и воздушного пространства.</p>
+                    <div class="images-row">
+                        <img src="shrek.jpg" alt="ВПК 1">
+                        <img src="shrek.jpg" alt="ВПК 2">
+                        <img src="shrek.jpg" alt="ВПК 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блок Экспорт -->
+            <div id="export" class="content-section" style="display: none;">
+                <h2 class="section-title">Экспорт</h2>
+                <div class="text-block">
+                    <p>Экспорт Белгурии играет ключевую роль в поддержании стабильности национальной валюты. Главными статьями вывоза остаются морские суда, построенные на местных верфях, а также свежая и консервированная рыба, которая высоко ценится на европейских рынках. Страна также экспортирует оборудование для ветряных электростанций и технологии в области альтернативной энергетики. Значительную долю в доходной части бюджета вносит экспорт туристических услуг, так как развитая инфраструктура республики способна принимать миллионы иностранных гостей ежегодно.</p>
+                    <div class="images-row">
+                        <img src="shrek.jpg" alt="Экспорт 1">
+                        <img src="shrek.jpg" alt="Экспорт 2">
+                        <img src="shrek.jpg" alt="Экспорт 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блок Импорт -->
+            <div id="import" class="content-section" style="display: none;">
+                <h2 class="section-title">Импорт</h2>
+                <div class="text-block">
+                    <p>В структуре импорта преобладают товары, которые не производятся в республике в достаточном объеме. Страна закупает за рубежом тяжелую промышленную технику, высокотехнологичную электронику, автомобильный транспорт и потребительские товары. Также значительная часть импорта приходится на сельскохозяйственную продукцию и зерно, поскольку горный рельеф и морское побережье не позволяют полностью обеспечить внутренние потребности в продовольствии за счет собственного земледелия.</p>
+                    <div class="images-row">
+                        <img src="shrek.jpg" alt="Импорт 1">
+                        <img src="shrek.jpg" alt="Импорт 2">
+                        <img src="shrek.jpg" alt="Импорт 3">
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Скрипт для переключения вкладок -->
+    <script>
+        function showSection(sectionId, btnElement) {
+            var sections = document.getElementsByClassName('content-section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+            document.getElementById(sectionId).style.display = 'block';
+
+            var buttons = document.getElementsByClassName('menu-btn');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+            btnElement.classList.add('active');
+        }
+    </script>
+                        <footer class="footer" style="text-align: center;">
+    <div class="footer-content">
+        <p>© 2026 Белгурия. Все права защищены.</p>
+
+</body>
+</html>
