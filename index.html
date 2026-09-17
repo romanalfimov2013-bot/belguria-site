@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная - Белгурия</title>
+    <!-- Подключаем тот же файл стилей -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Шапка (остается без изменений) -->
+    <header class="site-header">
+        <div class="logo-area">
+            <img src="https://094a01d06c8a6036f9935b45c309f845.r2.cloudflarestorage.com/grok/generations/4b1dea66-5a46-4fd3-821e-a60f4f7a6da9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=1b78185b2ca3fe0c329e0132209dd454%2F20260915%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260915T162835Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d9ef54d078889893c1863980db6bfb83210ed59d4a07686193c3aeef71c87668" alt="Логотип" class="logo-img">
+
+            
+            <span class="site-title">Белгурия</span>
+        </div>
+        <nav class="nav-buttons">
+            <a href="index.html" class="btn">Главная</a>
+            <a href="about.html" class="btn">О стране</a>
+            <a href="news.html" class="btn">Новости</a>
+            <a href="economy.html" class="btn">Экономика</a>
+            <a href="contacts.html" class="btn">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Основной макет (как на странице "О стране") -->
+    <div class="about-layout">
+       
+        <!-- Правая часть с контентом -->
+       
+            
+            <!-- Блок 1: Приветствие (то, что было сверху на слайде 1) -->
+            <div id="welcome" class="content-section">
+                <h2 class="section-title">ГЛАВНАЯ</h2>
+                <div class="text-block" style="text-align: center;">
+                    <p class="welcome-text">Добро пожаловать в Республику Белгурию</u>!</p>
+                </div>
+  
+        <p class="quote" style="text-align: center;">Где Атлантика омывает белые скалы</p>
+    <!-- Тот же скрипт для переключения вкладок -->
+    <script>
+        function showSection(sectionId, btnElement) {
+            // Скрываем все блоки
+            var sections = document.getElementsByClassName('content-section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+            // Показываем нужный
+            document.getElementById(sectionId).style.display = 'block';
+
+            // Обновляем активную кнопку
+            var buttons = document.getElementsByClassName('menu-btn');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+            btnElement.classList.add('active');
+        }
+    </script>
+         <footer class="footer" style="text-align: center;">
+    <div class="footer-content">
+        <p>© 2026 Белгурия. Все права защищены.</p>
+
+</body>
+</html>
